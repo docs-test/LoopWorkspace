@@ -39,8 +39,6 @@ platform :ios do
       key_content: "#{FASTLANE_KEY}"
     )
 
-    all_builds = Spaceship::ConnectAPI::Build.all(app_id: Spaceship::ConnectAPI::App.find("#{BUNDLE_ID}").id)
-    previous_build_number = all_builds.map(&:version).map(&:to_i).max || 0
     current_build_number = 141
 
     increment_build_number(
