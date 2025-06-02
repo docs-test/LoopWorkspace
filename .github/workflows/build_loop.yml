@@ -284,6 +284,23 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
+          export SCRIPT_BRANCH=increase_remote_window
+          export PATCH_BRANCH=increase_remote_window
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/$SCRIPT_BRANCH/CustomizationSelect.sh)" \
+          dexcom_upload_readings \
+          future_carbs_4h \
+          override_sens \
+          now_line \
+          watch_title \
+          meal_days \
+          profiles \
+          basal_lock \
+          live_activity \
+          negative_insulin \
+          remote_window
+
+          # the final customization listed above CANNOT have a continuation character
+          # more customizations can be pasted after this line
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
