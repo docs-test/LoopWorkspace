@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/hugomarisco/fastlane.git
   revision: bc5d8810c716887baad74e4c257811f4bfcaeb48
-  branch: patch-2
+  ref: bc5d8810c716887baad74e4c257811f4bfcaeb48
   specs:
     fastlane (2.227.2)
       CFPropertyList (>= 2.3, < 4.0.0)
