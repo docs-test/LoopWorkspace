@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem "fastlane",  git: "https://github.com/hugomarisco/fastlane.git", ref: "bc5d8810c716887baad74e4c257811f4bfcaeb48"
+gem "fastlane",  git: "https://github.com/loopandlearn/fastlane.git", ref: "832fdd1ae037cdd59e37c89e3a5ed9b27426776c"
