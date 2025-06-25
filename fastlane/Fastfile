@@ -51,7 +51,7 @@ platform :ios do
       build_number: current_build_number
     )      
     
-    match(
+    produce(
       type: "appstore",
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [
@@ -222,7 +222,7 @@ platform :ios do
       key_content: "#{FASTLANE_KEY}"
     )
     
-    match(
+    produce(
       type: "appstore",
       force: false,
       verbose: true,
@@ -255,7 +255,7 @@ platform :ios do
 
     find_bundle_id("com.#{TEAMID}.loopkit.Loop")
 
-    match(
+    produce(
       type: "appstore",
       git_basic_authorization: Base64.strict_encode64("#{GITHUB_REPOSITORY_OWNER}:#{GH_PAT}"),
       app_identifier: [],
