@@ -284,6 +284,20 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
+          # insert a number of customizations from main branch of lnl-scripts
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
+            negative_insulin \
+            dexcom_upload_readings \
+            future_carbs_4h \
+            no_auth \
+            override_sens \
+            now_line \
+            watch_title \
+            profiles \
+            basal_lock \
+            live_activity \
+            meal_days
+
           # test customization PR for AI Food Search
           export SCRIPT_BRANCH=prelim_ai_food && export PATCH_BRANCH=prelim_ai_food && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/loopandlearn/lnl-scripts/$SCRIPT_BRANCH/CustomizationSelect.sh)" ai_food
 
