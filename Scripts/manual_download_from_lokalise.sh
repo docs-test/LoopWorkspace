@@ -17,6 +17,8 @@ set -u
 
 date=`date`
 
+source Scripts/define_common.sh
+
 # Fetch translations from Lokalise
 rm -rf xliff_in
 lokalise2 \
@@ -35,6 +37,8 @@ lokalise2 \
 # this overwrites any existing file because we want to capture the date of the actual download
 
 echo "Updated translations from Lokalise on ${date}" > "${message_file}"
+
+echo "The standard translation commit message is stored in ${message_file}"
 
 echo "Continue by reviewing the importing the files in xliff_in"
 echo " for each submodule with command:"
