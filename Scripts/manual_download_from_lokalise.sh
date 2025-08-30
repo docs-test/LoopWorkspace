@@ -40,6 +40,7 @@ echo "Updated translations from Lokalise on ${date}" > "${message_file}"
 
 echo "The standard translation commit message is stored in ${message_file}"
 
+echo ""
 echo "Continue by reviewing the importing the files in xliff_in"
 echo " for each submodule with command:"
 echo "./Scripts/manual_import_localizations.sh"

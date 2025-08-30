@@ -20,7 +20,31 @@ translation_dir="translations"
 test_lw_dir="dev_translations_test"
 
 # define the languages used by the translation scripts
-LANGUAGES=(ar cs ru en zh-Hans nl fr de it nb pl es ja pt-BR vi da sv fi ro tr he sk hi)
+# matches lokalise order, en plus alphabetical order by language name in English
+LANGUAGES=(en \
+    ar \
+    zh-Hans \
+    cs \
+    da \
+    nl \
+    fi \
+    fr \
+    de \
+    he \
+    hi ]
+    it \
+    ja \
+    nb \
+    pl \
+    pt-BR \
+    ro \
+    ru \
+    sk \
+    es \
+    sv \
+    tr \
+    vi \
+)
 
 # define the projects used by the translation scripts
 projects=( \
@@ -42,4 +66,4 @@ projects=( \
     LoopKit:OmniKit:main \
     LoopKit:RileyLinkKit:dev \
     LoopKit:TidepoolService:dev \
-    )
+)

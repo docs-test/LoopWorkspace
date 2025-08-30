@@ -34,5 +34,6 @@ done
 
 echo "Done reviewing diffs"
 
+echo ""
 echo "Continue by committing the updates and creating PR with"
 echo "./Scripts/manual_finalize_translations.sh"

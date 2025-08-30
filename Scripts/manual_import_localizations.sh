@@ -37,5 +37,6 @@ foreach file in xliff_in/*.xliff
   xcodebuild -workspace LoopWorkspace.xcworkspace -scheme "LoopWorkspace" -importLocalizations -localizationPath $file
 end
 
+echo ""
 echo "Continue by reviewing the differences for each submodule with command:"
 echo "./Scripts/manual_review_translations.sh"
