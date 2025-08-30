@@ -26,7 +26,7 @@ for project in ${projects}; do
     git branch -D ${archive_dir} || true
     git switch -c ${archive_dir}
     git add .
-    if git commit -F "${message_file}"; then
+    if git commit -m "${message_string}"; then
         echo "updated $dir with ${message_string} in ${archive_dir} branch"    
     fi
     git branch -D ${translation_dir}
