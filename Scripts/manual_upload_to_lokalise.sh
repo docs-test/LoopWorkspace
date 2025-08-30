@@ -46,10 +46,6 @@ if [[ ${query} == "y" ]]; then
     end
 
     echo "Reminder: At lokalise, wait until all uploaded files are processed"
-    echo "   Be sure to these unneeded keys are hidden from contributors"
-    echo "   since we don't know how to prevent the upload"
-    echo "   CFBundleGetInfoString, CFBundleName, NSHumanReadableCopyright,"
-    echo "   NSHealthShareUsageDescription
 
 else;
     echo "The upload to lokalise was skipped"
