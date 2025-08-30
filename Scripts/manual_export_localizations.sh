@@ -18,3 +18,6 @@ xcodebuild -scheme LoopWorkspace -exportLocalizations -localizationPath xclocs $
 mkdir -p xliff_out
 find xclocs -name '*.xliff' -exec cp {} xliff_out \;
 
+echo ""
+echo "Next step is to upload the xliff_out files to lokalise with"
+echo "./Scripts/manual_upload_to_lokalise.sh"
