@@ -164,10 +164,9 @@ platform :ios do
         identifier: identifier,
         platform:   "IOS"
       )
-      existing = bundle_id.get_capabilities.map(&:capability_type)
-      capabilities.reject { |c| existing.include?(c) }.each do |cap|
-        bundle_id.create_capability(cap)
-      end
+      capabilities.each { |capability|
+        bundle_id.create_capability(capability)
+      }
     end
 
     configure_bundle_id("Loop", "com.#{TEAMID}.loopkit.Loop", [
