@@ -179,7 +179,6 @@ platform :ios do
 
     configure_bundle_id("Loop Intent Extension", "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension", [
       Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
-      Spaceship::ConnectAPI::BundleIdCapability::Type::SIRIKIT,
     ])
 
     configure_bundle_id("Loop Status Extension", "com.#{TEAMID}.loopkit.Loop.statuswidget", [
