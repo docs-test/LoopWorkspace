@@ -204,7 +204,9 @@ jobs:
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
 
-          # Submodule xxxxx patches:
+          # G7SensorKit Patch:
+          # Emergency fix for users of 15-day G7 extended wear sensor:
+          curl https://github.com/loopandlearn/G7SensorKit/commit/ac920ed738e2af2042a53f6fcb0ae9762e2cbab8.patch | git apply --directory=G7SensorKit -v --whitespace=fix
 
           # Add patches for customization of additional submodules by following the templates above, 
           # and make sure to specify the submodule by setting "--directory=(submodule_name)".
