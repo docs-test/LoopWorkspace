@@ -1,0 +1,13 @@
+diff --git a/Loop/Loop/Managers/DevelopmentBranchAlerter.swift b/Loop/Loop/Managers/DevelopmentBranchAlerter.swift
+index c6795f1d..371bb636 100644
+--- a/Loop/Loop/Managers/DevelopmentBranchAlerter.swift
++++ b/Loop/Loop/Managers/DevelopmentBranchAlerter.swift
+@@ -10,7 +10,7 @@ import UIKit
+ enum DevelopmentBranchAlerter {
+ 
+     // The LoopWorkspace superproject branch this warning applies to.
+-    private static let developmentBranchName = "dev"
++    private static let developmentBranchName = "no-dev-warning-please"
+ 
+     private static let switchToMainURL = URL(string: "https://loopkit.github.io/loopdocs/faqs/loop-faqs/#how-do-i-return-to-the-released-version")!
+ 
