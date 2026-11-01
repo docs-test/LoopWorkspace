@@ -1,11 +1,9 @@
 [submodule "Loop"]
 	path = Loop
-	url = https://github.com/jeremybarnum/Loop.git
-	branch = sportmode/all-prs
+	url = https://github.com/LoopKit/Loop.git
 [submodule "LoopKit"]
 	path = LoopKit
-	url = https://github.com/jeremybarnum/LoopKit.git
-	branch = sportmode/watch-uploads
+	url = https://github.com/LoopKit/LoopKit.git
 [submodule "CGMBLEKit"]
 	path = CGMBLEKit
 	url = https://github.com/LoopKit/CGMBLEKit.git
@@ -14,12 +12,10 @@
 	url = https://github.com/LoopKit/dexcom-share-client-swift.git
 [submodule "RileyLinkKit"]
 	path = RileyLinkKit
-	url = https://github.com/jeremybarnum/rileylink_ios
-	branch = next-dev
+	url = https://github.com/LoopKit/RileyLinkKit
 [submodule "NightscoutService"]
 	path = NightscoutService
-	url = https://github.com/jeremybarnum/NightscoutService.git
-	branch = sportmode/watch-uploads
+	url = https://github.com/LoopKit/NightscoutService.git
 [submodule "Minizip"]
 	path = Minizip
 	url = https://github.com/LoopKit/Minizip.git
@@ -43,12 +39,10 @@
 	url = https://github.com/LoopKit/LoopSupport
 [submodule "G7SensorKit"]
 	path = G7SensorKit
-	url = https://github.com/jeremybarnum/G7SensorKit.git
-	branch = sportmode/bench
+	url = https://github.com/LoopKit/G7SensorKit.git
 [submodule "TidepoolService"]
 	path = TidepoolService
-	url = https://github.com/jeremybarnum/TidepoolService.git
-	branch = sportmode/watch-uploads
+	url = https://github.com/LoopKit/TidepoolService.git
 [submodule "MinimedKit"]
 	path = MinimedKit
 	url = https://github.com/LoopKit/MinimedKit.git
@@ -66,8 +60,8 @@
 	url = https://github.com/LoopKit/LoopAlgorithm.git
 [submodule "OmnipodKit"]
 	path = OmnipodKit
-	url = https://github.com/jeremybarnum/OmnipodKit
-	branch = sportmode/bench
+	url = https://github.com/loopandlearn/OmnipodKit.git
+	branch = next-dev
 [submodule "EversenseKit"]
 	path = EversenseKit
 	url = https://github.com/LoopKit/EversenseKit.git
@@ -79,7 +73,3 @@
 [submodule "RoundWhiteDiscKit"]
 	path = RoundWhiteDiscKit
 	url = https://github.com/airedev326/RoundWhiteDiscKit.git
-[submodule "TidepoolKit"]
-	path = TidepoolKit
-	url = https://github.com/jeremybarnum/TidepoolKit.git
-	branch = sportmode/watchos
