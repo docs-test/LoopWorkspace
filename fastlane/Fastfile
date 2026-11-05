@@ -60,7 +60,8 @@ platform :ios do
         "com.#{TEAMID}.loopkit.Loop.LoopWatch.watchkitextension", 
         "com.#{TEAMID}.loopkit.Loop.LoopWatch", 
         "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension",
-        "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension"
+        "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension",
+        "com.#{TEAMID}.loopkit.Loop.LoopWatch.Complications"
       ]
     )
 
@@ -114,6 +115,13 @@ platform :ios do
       profile_name: mapping["com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension"],
       code_sign_identity: "iPhone Distribution",
       targets: ["Loop Widget Extension"]
+    )
+
+    update_code_signing_settings(
+      path: "#{GITHUB_WORKSPACE}/Loop/Loop.xcodeproj",
+      profile_name: mapping["com.#{TEAMID}.loopkit.Loop.LoopWatch.Complications"],
+      code_sign_identity: "iPhone Distribution",
+      targets: ["Loop Complications"]
     )
 
     gym(
@@ -196,6 +204,10 @@ platform :ios do
     configure_bundle_id("Loop Widget Extension", "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension", [
       Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
     ])
+
+    configure_bundle_id("Loop Complications", "com.#{TEAMID}.loopkit.Loop.LoopWatch.Complications", [
+      Spaceship::ConnectAPI::BundleIdCapability::Type::APP_GROUPS
+    ])
     
   end
 
@@ -222,6 +234,7 @@ platform :ios do
         "com.#{TEAMID}.loopkit.Loop.LoopWatch", 
         "com.#{TEAMID}.loopkit.Loop.Loop-Intent-Extension",
         "com.#{TEAMID}.loopkit.Loop.LoopWidgetExtension",
+        "com.#{TEAMID}.loopkit.Loop.LoopWatch.Complications",
       ]
     )
   end
